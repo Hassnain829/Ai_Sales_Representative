@@ -1,0 +1,27 @@
+text,intent,entities,sentiment,context,outcome
+"Hi, I need a website for my small business",website_inquiry,"{'project_type':'website','scope':'small business','urgency':'within 1 month'}",positive,new_lead,conversion
+How much do you charge for a mobile app?,pricing_query,"{'project_type':'mobile app','platform':'both'}",neutral,qualification,follow_up
+Can you show me examples of e-commerce sites you've built?,portfolio_request,"{'project_type':'ecommerce','style':'modern'}",positive,consideration,conversion
+Your estimate seems too high for a simple website,price_negotiation,"{'current_quote':'$5000','budget':'$3000'}",negative,negotiation,adjusted_quote
+What's included in your basic WordPress package?,service_detail,"{'platform':'WordPress','package':'basic'}",neutral,research,follow_up
+How long will it take to develop a custom CMS?,timeline_query,"{'project_type':'custom CMS','complexity':'medium'}",neutral,planning,conversion
+Do you offer ongoing maintenance after launch?,post_launch,"{'service_type':'maintenance','frequency':'monthly'}",positive,closing,upsell
+I'm not happy with the design mockups,revision_request,"{'issue':'design','revision_round':'2'}",negative,feedback,revision
+Can we schedule a call to discuss my project?,meeting_request,"{'preferred_time':'afternoons','duration':'30 mins'}",positive,qualification,scheduled
+What payment methods do you accept?,payment_query,"{'methods':['credit card','bank transfer']}",neutral,closing,conversion
+Have you worked with Shopify before?,experience_verification,"{'platform':'Shopify','industry':'fashion'}",neutral,qualification,conversion
+I need a logo designed by next week,logo_design,"{'delivery':'1 week','style':'minimalist'}",positive,new_lead,rush_order
+Your portfolio doesn't show enough mobile examples,concern_voiced,"{'gap':'mobile portfolio','count':'few'}",negative,consideration,lost
+Do you provide hosting services as well?,addon_inquiry,"{'service':'hosting','type':'managed'}",positive,closing,upsell
+What's your revision policy?,policy_query,"{'policy_type':'revisions','limit':'3'}",neutral,research,conversion
+Can you integrate with our existing CRM?,technical_query,"{'system':'CRM','api':'yes'}",neutral,technical,conversion
+I need a developer who knows React and Node,skill_verification,"{'skills':['React','Node'],'level':'senior'}",positive,qualification,conversion
+Your response time is too slow,complaint,"{'issue':'communication','response_time':'48h+'}",negative,feedback,lost
+Do you offer discounts for non-profits?,discount_request,"{'organization_type':'non-profit','proof':'yes'}",neutral,negotiation,adjusted_quote
+Can we break the project into phases?,project_planning,"{'phases':['design','development','testing']}",positive,planning,conversion
+I want to revamp my current website to a more modern look,website_update,"{'project_type':'website redesign','style':'modern'}",positive,new_lead,conversion
+How quickly can you start working on an e-commerce app?,timeline_query,"{'project_type':'ecommerce app','urgency':'ASAP'}",neutral,qualification,conversion
+Can I get a bundle price for website and SEO services?,bundle_pricing,"{'services':['website','SEO']}",neutral,negotiation,adjusted_quote
+Do you create mobile-friendly websites by default?,feature_verification,{'feature':'mobile-friendly'},positive,research,conversion
+I'm concerned about the site speed on mobile,performance_concern,"{'device':'mobile','issue':'speed'}",negative,feedback,revision
+What happens if I need changes after the website is live?,post_launch_query,{'service':'post-launch revisions'},neutral,closing,upsell
