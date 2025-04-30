@@ -1,4 +1,5 @@
-from flask import request, jsonify, current_app
+from flask import request, jsonify, current_app ,render_template
+from werkzeug.exceptions import NotFound, InternalServerError, BadRequest
 from http import HTTPStatus
 from typing import Dict, Any
 import uuid
@@ -16,7 +17,24 @@ agent = SalesAgent()
 
 def init_routes(app):
     """Initialize all application routes with proper error handling"""
-    
+    @app.route('/')
+    def serve_dashboard():
+        """Serve the main dashboard page"""
+        try:
+            return render_template('dashboard.html')
+        except NotFound:
+            return jsonify({
+                "error": "Dashboard template not found",
+                "message": "The dashboard.html file is missing from the templates directory"
+            }), HTTPStatus.NOT_FOUND
+        except Exception as e:
+            logger.error(f"Dashboard rendering failed: {str(e)}")
+            return jsonify({
+                "error": "Dashboard error",
+                "message": str(e)
+            }), HTTPStatus.INTERNAL_SERVER_ERROR
+
+
     @app.route('/api/v1/conversations', methods=['POST'])
     def handle_conversation():
         """
@@ -352,3 +370,13 @@ def init_routes(app):
                 "error": str(e),
                 "timestamp": datetime.utcnow().isoformat()
             }), HTTPStatus.SERVICE_UNAVAILABLE
+        
+    @app.errorhandler(404)
+    def handle_not_found(e):
+        """Handle 404 errors consistently"""
+        if request.path == '/':
+            return serve_dashboard()  # Try to serve dashboard for root URL
+        return jsonify({
+            "error": "Not found",
+            "message": f"The requested URL {request.path} was not found"
+        }), HTTPStatus.NOT_FOUND    

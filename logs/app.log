@@ -23,3 +23,9 @@
 2025-04-30 05:29:27,375 - app - INFO - Database tables verified/created
 2025-04-30 05:29:27,375 - app - INFO - Application initialized successfully
 2025-04-30 05:29:31,729 - app - WARNING - Not found: 404 Not Found: The requested URL was not found on the server. If you entered the URL manually please check your spelling and try again.
+2025-04-30 22:04:22,812 - app.utils.db_handler - INFO - Database connection established
+2025-04-30 22:04:26,064 - app - INFO - Database tables verified/created
+2025-04-30 22:04:26,064 - app - INFO - Application initialized successfully
+2025-04-30 22:04:52,109 - app.routes - ERROR - Dashboard rendering failed: dashboard.html
+2025-04-30 22:04:52,109 - app.routes - ERROR - Dashboard rendering failed: dashboard.html
+2025-04-30 22:04:52,317 - app - WARNING - Not found: 404 Not Found: The requested URL was not found on the server. If you entered the URL manually please check your spelling and try again.
