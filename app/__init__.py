@@ -21,7 +21,7 @@ def create_app(config_class=Config):
         Flask: Configured Flask application instance
     """
     # Initialize Flask application
-    app = Flask(__name__)
+    app = Flask(__name__ , template_folder='templates')
     
     # Load configuration
     app.config.from_object(config_class)

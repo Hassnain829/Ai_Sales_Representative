@@ -10,6 +10,7 @@ from .main import SalesAgent
 from .models import db, Conversation, TrainingData
 from .utils.logger import AppLogger
 from .utils.db_handler import DatabaseManager
+import os
 
 logger = AppLogger.get_logger(__name__)
 db_manager = DatabaseManager()
@@ -21,11 +22,17 @@ def init_routes(app):
     def serve_dashboard():
         """Serve the main dashboard page"""
         try:
+            # Verify template exists before rendering
+            template_path = os.path.join(app.root_path, 'templates', 'dashboard.html')
+            if not os.path.exists(template_path):
+                raise NotFound("dashboard.html not found in templates directory")
+                
             return render_template('dashboard.html')
-        except NotFound:
+        except NotFound as e:
+            logger.error(f"Dashboard template missing: {str(e)}")
             return jsonify({
-                "error": "Dashboard template not found",
-                "message": "The dashboard.html file is missing from the templates directory"
+                "error": "Dashboard unavailable",
+                "message": str(e)
             }), HTTPStatus.NOT_FOUND
         except Exception as e:
             logger.error(f"Dashboard rendering failed: {str(e)}")

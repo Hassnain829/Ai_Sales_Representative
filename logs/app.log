@@ -29,3 +29,48 @@
 2025-04-30 22:04:52,109 - app.routes - ERROR - Dashboard rendering failed: dashboard.html
 2025-04-30 22:04:52,109 - app.routes - ERROR - Dashboard rendering failed: dashboard.html
 2025-04-30 22:04:52,317 - app - WARNING - Not found: 404 Not Found: The requested URL was not found on the server. If you entered the URL manually please check your spelling and try again.
+2025-05-01 02:21:04,397 - app.utils.db_handler - INFO - Database connection established
+2025-05-01 02:21:06,449 - app - CRITICAL - Failed to initialize application: Rule.__init__() got an unexpected keyword argument 'Methods'. Did you mean 'methods'?
+2025-05-01 02:21:30,579 - app.utils.db_handler - INFO - Database connection established
+2025-05-01 02:21:33,028 - app - INFO - Database tables verified/created
+2025-05-01 02:21:33,031 - app - INFO - Application initialized successfully
+2025-05-01 02:21:43,143 - app.routes - ERROR - Dashboard rendering failed: dashboard.html
+2025-05-01 02:21:43,143 - app.routes - ERROR - Dashboard rendering failed: dashboard.html
+2025-05-01 02:23:42,792 - app.utils.db_handler - INFO - Database connection established
+2025-05-01 02:23:44,363 - app - INFO - Database tables verified/created
+2025-05-01 02:23:44,369 - app - INFO - Application initialized successfully
+2025-05-01 02:24:35,018 - app.utils.db_handler - INFO - Database connection established
+2025-05-01 02:24:36,983 - app - INFO - Database tables verified/created
+2025-05-01 02:24:36,986 - app - INFO - Application initialized successfully
+2025-05-01 02:26:19,637 - app.utils.db_handler - INFO - Database connection established
+2025-05-01 02:26:21,620 - app - INFO - Database tables verified/created
+2025-05-01 02:26:21,627 - app - INFO - Application initialized successfully
+2025-05-01 02:27:52,137 - app.routes - ERROR - Dashboard rendering failed: dashboard.html
+2025-05-01 02:27:52,137 - app.routes - ERROR - Dashboard rendering failed: dashboard.html
+2025-05-01 02:34:25,187 - app.utils.db_handler - INFO - Database connection established
+2025-05-01 02:34:26,749 - app - INFO - Database tables verified/created
+2025-05-01 02:34:26,753 - app - INFO - Application initialized successfully
+2025-05-01 02:34:30,322 - app.routes - ERROR - Dashboard rendering failed: name 'os' is not defined
+2025-05-01 02:34:30,322 - app.routes - ERROR - Dashboard rendering failed: name 'os' is not defined
+2025-05-01 02:37:03,133 - app.utils.db_handler - INFO - Database connection established
+2025-05-01 02:37:05,032 - app - INFO - Database tables verified/created
+2025-05-01 02:37:05,035 - app - INFO - Application initialized successfully
+2025-05-01 02:37:07,214 - app.routes - ERROR - Dashboard rendering failed: name 'os' is not defined
+2025-05-01 02:37:07,214 - app.routes - ERROR - Dashboard rendering failed: name 'os' is not defined
+2025-05-01 02:40:55,371 - app.utils.db_handler - INFO - Database connection established
+2025-05-01 02:40:57,619 - app - INFO - Database tables verified/created
+2025-05-01 02:40:57,622 - app - INFO - Application initialized successfully
+2025-05-01 02:40:59,728 - app.routes - ERROR - Dashboard rendering failed: name 'os' is not defined
+2025-05-01 02:40:59,728 - app.routes - ERROR - Dashboard rendering failed: name 'os' is not defined
+2025-05-01 02:41:28,322 - app.utils.db_handler - INFO - Database connection established
+2025-05-01 02:41:29,607 - app - INFO - Database tables verified/created
+2025-05-01 02:41:29,611 - app - INFO - Application initialized successfully
+2025-05-01 02:41:39,840 - app - WARNING - Not found: 404 Not Found: The requested URL was not found on the server. If you entered the URL manually please check your spelling and try again.
+2025-05-01 02:42:42,592 - app.utils.db_handler - INFO - Database connection established
+2025-05-01 02:42:44,959 - app - INFO - Database tables verified/created
+2025-05-01 02:42:44,962 - app - INFO - Application initialized successfully
+2025-05-01 02:42:47,518 - app.routes - ERROR - Dashboard template missing: 404 Not Found: dashboard.html not found in templates directory
+2025-05-01 02:42:47,518 - app.routes - ERROR - Dashboard template missing: 404 Not Found: dashboard.html not found in templates directory
+2025-05-01 02:43:25,412 - app.utils.db_handler - INFO - Database connection established
+2025-05-01 02:43:27,499 - app - INFO - Database tables verified/created
+2025-05-01 02:43:27,503 - app - INFO - Application initialized successfully
