@@ -1,7 +1,7 @@
 import logging
 import random
 from transformers import pipeline
-from .utils.logger import AppLogger
+from utils.logger import AppLogger
 
 logger = AppLogger.get_logger(__name__)
 
