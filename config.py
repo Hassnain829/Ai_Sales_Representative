@@ -5,7 +5,7 @@ load_dotenv()
 
 class Config:
     # Database
-    SQLALCHEMY_DATABASE_URI = os.getenv('DATABASE_URL', 'postgresql://postgres:123@localhost/sales_agent')
+    SQLALCHEMY_DATABASE_URI = os.getenv('postgresql://postgres:123@localhost/sales_agent')
     SQLALCHEMY_TRACK_MODIFICATIONS = False
     
     # Twilio

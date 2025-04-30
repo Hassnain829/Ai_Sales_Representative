@@ -7,3 +7,19 @@
 2025-04-30 04:59:36,326 - app - INFO - Database tables verified/created
 2025-04-30 04:59:36,327 - app - INFO - Application initialized successfully
 2025-04-30 04:59:47,311 - app - WARNING - Not found: 404 Not Found: The requested URL was not found on the server. If you entered the URL manually please check your spelling and try again.
+2025-04-30 05:06:27,286 - app.utils.db_handler - INFO - Database connection established
+2025-04-30 05:06:29,486 - app - INFO - Database tables verified/created
+2025-04-30 05:06:29,486 - app - INFO - Application initialized successfully
+2025-04-30 05:06:33,300 - app - WARNING - Not found: 404 Not Found: The requested URL was not found on the server. If you entered the URL manually please check your spelling and try again.
+2025-04-30 05:06:42,360 - app - WARNING - Not found: 404 Not Found: The requested URL was not found on the server. If you entered the URL manually please check your spelling and try again.
+2025-04-30 05:08:28,294 - app - WARNING - Not found: 404 Not Found: The requested URL was not found on the server. If you entered the URL manually please check your spelling and try again.
+2025-04-30 05:08:33,152 - app - WARNING - Not found: 404 Not Found: The requested URL was not found on the server. If you entered the URL manually please check your spelling and try again.
+2025-04-30 05:08:38,737 - app - WARNING - Not found: 404 Not Found: The requested URL was not found on the server. If you entered the URL manually please check your spelling and try again.
+2025-04-30 05:24:23,232 - app.utils.db_handler - INFO - Database connection established
+2025-04-30 05:24:24,696 - app - INFO - Database tables verified/created
+2025-04-30 05:24:24,696 - app - INFO - Application initialized successfully
+2025-04-30 05:24:27,793 - app - WARNING - Not found: 404 Not Found: The requested URL was not found on the server. If you entered the URL manually please check your spelling and try again.
+2025-04-30 05:29:25,654 - app.utils.db_handler - INFO - Database connection established
+2025-04-30 05:29:27,375 - app - INFO - Database tables verified/created
+2025-04-30 05:29:27,375 - app - INFO - Application initialized successfully
+2025-04-30 05:29:31,729 - app - WARNING - Not found: 404 Not Found: The requested URL was not found on the server. If you entered the URL manually please check your spelling and try again.
