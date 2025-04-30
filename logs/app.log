@@ -1,0 +1,9 @@
+2025-04-30 04:51:59,824 - app.utils.db_handler - INFO - Database connection established
+2025-04-30 04:52:03,105 - app - INFO - Database tables verified/created
+2025-04-30 04:52:03,106 - app - INFO - Application initialized successfully
+2025-04-30 04:52:09,925 - app - WARNING - Not found: 404 Not Found: The requested URL was not found on the server. If you entered the URL manually please check your spelling and try again.
+2025-04-30 04:52:10,081 - app - WARNING - Not found: 404 Not Found: The requested URL was not found on the server. If you entered the URL manually please check your spelling and try again.
+2025-04-30 04:59:33,941 - app.utils.db_handler - INFO - Database connection established
+2025-04-30 04:59:36,326 - app - INFO - Database tables verified/created
+2025-04-30 04:59:36,327 - app - INFO - Application initialized successfully
+2025-04-30 04:59:47,311 - app - WARNING - Not found: 404 Not Found: The requested URL was not found on the server. If you entered the URL manually please check your spelling and try again.

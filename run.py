@@ -1,8 +1,6 @@
-from app import create_app
-from app.models import db
-from config import Config
+from app import create_app, db  # Change this line
 
-app = create_app(Config)
+app = create_app()
 
 if __name__ == '__main__':
     with app.app_context():

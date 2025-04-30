@@ -1,0 +1,50 @@
+### Core Application
+flask
+python-dotenv
+gunicorn
+gevent
+
+### Database
+flask-sqlalchemy
+psycopg2-binary
+alembic
+sqlalchemy
+
+### Natural Language Processing
+transformers
+torch
+sentencepiece
+textblob
+nltk
+spacy
+en-core-web-sm
+
+### Telephony
+twilio
+
+### Google Cloud Services
+google-cloud-speech
+google-cloud-texttospeech
+
+### Machine Learning
+scikit-learn
+pandas
+numpy
+tensorflow
+onnxruntime
+
+### Monitoring & Logging
+structlog
+sentry-sdk[flask]
+prometheus-flask-exporter
+
+### Development Tools
+pytest
+pytest-cov
+faker
+black
+mypy
+flake8
+
+### Data Versioning
+dvc

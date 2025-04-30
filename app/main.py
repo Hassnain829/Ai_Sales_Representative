@@ -1,10 +1,12 @@
 import logging
 from datetime import datetime
 from textblob import TextBlob
+import torch
 from transformers import pipeline
 from .models import db, Conversation
 from .utils.logger import AppLogger
-from .utils.db_handler import DBManager
+from .utils.db_handler import DatabaseManager
+from .utils.config import Config
 
 logger = AppLogger.get_logger(__name__)
 
@@ -21,7 +23,7 @@ class SalesAgent:
             "text-classification",
             model="distilbert-base-uncased-finetuned-sst-2-english"
         )
-        self.db = DBManager()
+        self.db = DatabaseManager()
         
     def process_message(self, text, session_id):
         """

@@ -11,7 +11,7 @@ class Config:
     DB_PORT = os.getenv("DB_PORT", 5432)
     DB_NAME = os.getenv("DB_NAME", "sales_agent")
     DB_USER = os.getenv("DB_USER", "postgres")
-    DB_PASS = os.getenv("DB_PASS", "")
+    DB_PASS = os.getenv("DB_PASS", "123")
     
     # ML Models
     INTENT_MODEL = os.getenv("INTENT_MODEL", "facebook/bart-large-mnli")
