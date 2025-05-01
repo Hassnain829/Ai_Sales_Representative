@@ -4,3 +4,11 @@
 2025-05-01 04:54:16,882 - app - WARNING - Not found: 404 Not Found: The requested URL was not found on the server. If you entered the URL manually please check your spelling and try again.
 2025-05-01 05:06:00,315 - app - WARNING - Not found: 404 Not Found: The requested URL was not found on the server. If you entered the URL manually please check your spelling and try again.
 2025-05-01 05:15:03,475 - app - WARNING - Not found: 404 Not Found: The requested URL was not found on the server. If you entered the URL manually please check your spelling and try again.
+2025-05-01 05:24:08,735 - app.utils.db_handler - INFO - Database connection established
+2025-05-01 05:24:11,403 - app - INFO - Database tables verified/created
+2025-05-01 05:24:11,404 - app - INFO - Application initialized successfully
+2025-05-01 05:24:30,611 - app - WARNING - Not found: 404 Not Found: The requested URL was not found on the server. If you entered the URL manually please check your spelling and try again.
+2025-05-01 05:39:14,779 - app.utils.db_handler - INFO - Database connection established
+2025-05-01 05:39:16,856 - app - INFO - Database tables verified/created
+2025-05-01 05:39:16,857 - app - INFO - Application initialized successfully
+2025-05-01 05:39:29,272 - app - WARNING - Not found: 404 Not Found: The requested URL was not found on the server. If you entered the URL manually please check your spelling and try again.
