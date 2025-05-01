@@ -12,3 +12,7 @@
 2025-05-01 05:39:16,856 - app - INFO - Database tables verified/created
 2025-05-01 05:39:16,857 - app - INFO - Application initialized successfully
 2025-05-01 05:39:29,272 - app - WARNING - Not found: 404 Not Found: The requested URL was not found on the server. If you entered the URL manually please check your spelling and try again.
+2025-05-01 06:11:12,607 - app.utils.db_handler - INFO - Database connection established
+2025-05-01 06:11:15,011 - app - INFO - Database tables verified/created
+2025-05-01 06:11:15,012 - app - INFO - Application initialized successfully
+2025-05-01 06:11:31,775 - app - WARNING - Not found: 404 Not Found: The requested URL was not found on the server. If you entered the URL manually please check your spelling and try again.

@@ -23,7 +23,7 @@ def init_routes(app):
         """Serve the main dashboard page"""
         try:
             # Verify template exists before rendering
-            template_path = os.path.join(app.root_path, 'templates', 'dashboard.html')
+            template_path = os.path.join(app.root_path, 'Templates', 'dashboard.html')
             if not os.path.exists(template_path):
                 raise NotFound("dashboard.html not found in templates directory")
                 
