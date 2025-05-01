@@ -2,7 +2,7 @@ import logging
 import pandas as pd
 from sklearn.model_selection import train_test_split
 from transformers import Trainer, TrainingArguments
-from .utils.logger import AppLogger
+from utils.logger import AppLogger
 from .intent_classifier import IntentClassifier
 
 logger = AppLogger.get_logger(__name__)

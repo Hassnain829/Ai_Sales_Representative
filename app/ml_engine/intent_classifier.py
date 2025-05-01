@@ -2,7 +2,7 @@ import logging
 import pandas as pd
 from transformers import pipeline, AutoModelForSequenceClassification, AutoTokenizer
 from sklearn.model_selection import train_test_split
-from .utils.logger import AppLogger
+from utils.logger import AppLogger
 
 logger = AppLogger.get_logger(__name__)
 
