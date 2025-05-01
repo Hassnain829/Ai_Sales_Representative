@@ -1,1 +1,4 @@
 {"timestamp": "2025-04-30T23:53:56.992544", "level": "INFO", "message": "Database connection established", "module": "db_handler", "function": "_init_db", "line": 26, "process": 2560, "thread": "MainThread"}
+{"timestamp": "2025-04-30T23:53:59.223622", "level": "INFO", "message": "Database tables verified/created", "module": "__init__", "function": "create_app", "line": 43, "process": 2560, "thread": "MainThread"}
+{"timestamp": "2025-04-30T23:53:59.224042", "level": "INFO", "message": "Application initialized successfully", "module": "__init__", "function": "create_app", "line": 48, "process": 2560, "thread": "MainThread"}
+{"timestamp": "2025-04-30T23:54:16.883611", "level": "WARNING", "message": "Not found: 404 Not Found: The requested URL was not found on the server. If you entered the URL manually please check your spelling and try again.", "module": "__init__", "function": "not_found", "line": 68, "process": 2560, "thread": "Thread-2 (process_request_thread)"}
