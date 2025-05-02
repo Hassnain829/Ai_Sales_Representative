@@ -1,6 +1,6 @@
 import logging
 import sys
-from logging.handlers import RotatingFileHandler, TimedRotatingFileHandler
+from logging.handlers import RotatingFileHandler, TimedRotatingFileHandler, WatchedFileHandler
 from datetime import datetime
 import json
 import os
@@ -39,7 +39,7 @@ class AppLogger:
         if name not in cls._loggers:
             # Create base logger
             logger = logging.getLogger(name)
-            logger.setLevel(logging.INFO)
+            logger.setLevel(logging.DEBUG)
             
             # Create logs directory if it doesn't exist
             os.makedirs("logs", exist_ok=True)
@@ -52,14 +52,10 @@ class AppLogger:
             logger.addHandler(console_handler)
             
             # 2. File Handler (rotating by size)
-            file_handler = RotatingFileHandler(
-                filename="logs/app.log",
-                maxBytes=10*1024*1024,  # 10MB
-                backupCount=5,
-                encoding='utf-8'
-            )
-            file_handler.setFormatter(
-                logging.Formatter('%(asctime)s - %(name)s - %(levelname)s - %(message)s')
+            os.makedirs('logs', exist_ok=True)
+            file_handler = WatchedFileHandler('logs/app.log', encoding='utf-8')
+            file_handler.setFormatter(logging.Formatter(
+            '%(asctime)s - %(name)s - %(levelname)s - %(message)s')
             )
             logger.addHandler(file_handler)
             

@@ -1,18 +1,49 @@
-2025-05-01 04:53:56,992 - app.utils.db_handler - INFO - Database connection established
-2025-05-01 04:53:59,223 - app - INFO - Database tables verified/created
-2025-05-01 04:53:59,223 - app - INFO - Application initialized successfully
-2025-05-01 04:54:16,882 - app - WARNING - Not found: 404 Not Found: The requested URL was not found on the server. If you entered the URL manually please check your spelling and try again.
-2025-05-01 05:06:00,315 - app - WARNING - Not found: 404 Not Found: The requested URL was not found on the server. If you entered the URL manually please check your spelling and try again.
-2025-05-01 05:15:03,475 - app - WARNING - Not found: 404 Not Found: The requested URL was not found on the server. If you entered the URL manually please check your spelling and try again.
-2025-05-01 05:24:08,735 - app.utils.db_handler - INFO - Database connection established
-2025-05-01 05:24:11,403 - app - INFO - Database tables verified/created
-2025-05-01 05:24:11,404 - app - INFO - Application initialized successfully
-2025-05-01 05:24:30,611 - app - WARNING - Not found: 404 Not Found: The requested URL was not found on the server. If you entered the URL manually please check your spelling and try again.
-2025-05-01 05:39:14,779 - app.utils.db_handler - INFO - Database connection established
-2025-05-01 05:39:16,856 - app - INFO - Database tables verified/created
-2025-05-01 05:39:16,857 - app - INFO - Application initialized successfully
-2025-05-01 05:39:29,272 - app - WARNING - Not found: 404 Not Found: The requested URL was not found on the server. If you entered the URL manually please check your spelling and try again.
-2025-05-01 06:11:12,607 - app.utils.db_handler - INFO - Database connection established
-2025-05-01 06:11:15,011 - app - INFO - Database tables verified/created
-2025-05-01 06:11:15,012 - app - INFO - Application initialized successfully
-2025-05-01 06:11:31,775 - app - WARNING - Not found: 404 Not Found: The requested URL was not found on the server. If you entered the URL manually please check your spelling and try again.
+2025-05-03 03:03:52,532 - app - INFO - Database tables initialized
+Database tables initialized
+2025-05-03 03:04:00,070 - app.utils.db_handler - INFO - Database connection established
+2025-05-03 03:04:00,070 - app.utils.db_handler - INFO - Database connection established
+Database connection established
+2025-05-03 03:04:02,268 - app - INFO - Application initialized successfully
+Application initialized successfully
+2025-05-03 03:04:06,793 - app.routes - ERROR - Twilio API error: 
+[31m[49mHTTP Error[0m [37m[49mYour request was:[0m
+
+[36m[49mPOST /Accounts/AC3b33ee1708fe8dd88ed7356b4867b515/Calls.json[0m
+
+[37m[49mTwilio returned the following information:[0m
+
+[34m[49mUnable to create record: Authenticate[0m
+
+[37m[49mMore information may be available here:[0m
+
+[34m[49mhttps://www.twilio.com/docs/errors/20003[0m
+
+
+2025-05-03 03:04:06,793 - app.routes - ERROR - Twilio API error: 
+[31m[49mHTTP Error[0m [37m[49mYour request was:[0m
+
+[36m[49mPOST /Accounts/AC3b33ee1708fe8dd88ed7356b4867b515/Calls.json[0m
+
+[37m[49mTwilio returned the following information:[0m
+
+[34m[49mUnable to create record: Authenticate[0m
+
+[37m[49mMore information may be available here:[0m
+
+[34m[49mhttps://www.twilio.com/docs/errors/20003[0m
+
+
+Twilio API error: 
+[31m[49mHTTP Error[0m [37m[49mYour request was:[0m
+
+[36m[49mPOST /Accounts/AC3b33ee1708fe8dd88ed7356b4867b515/Calls.json[0m
+
+[37m[49mTwilio returned the following information:[0m
+
+[34m[49mUnable to create record: Authenticate[0m
+
+[37m[49mMore information may be available here:[0m
+
+[34m[49mhttps://www.twilio.com/docs/errors/20003[0m
+
+
