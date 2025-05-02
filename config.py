@@ -7,23 +7,16 @@ class Config:
     # Database Configuration
     SQLALCHEMY_DATABASE_URI = os.getenv('DATABASE_URL')  # Must match .env
     SQLALCHEMY_TRACK_MODIFICATIONS = False
-
-    # Twilio Configuration
+    
+     # Correct way to set up Twilio credentials
     TWILIO_ACCOUNT_SID = os.getenv('TWILIO_ACCOUNT_SID')
     TWILIO_AUTH_TOKEN = os.getenv('TWILIO_AUTH_TOKEN')
     TWILIO_PHONE_NUMBER = os.getenv('TWILIO_PHONE_NUMBER')
-
-    # Validate configuration on load
-    def __init__(self):
-        self._validate()
-        
-    def _validate(self):
-        """Ensure required configuration exists"""
-        required = {
-            'SQLALCHEMY_DATABASE_URI': self.SQLALCHEMY_DATABASE_URI,
-            'TWILIO_ACCOUNT_SID': self.TWILIO_ACCOUNT_SID,
-            'TWILIO_AUTH_TOKEN': self.TWILIO_AUTH_TOKEN
-        }
-        missing = [k for k, v in required.items() if not v]
-        if missing:
-            raise ValueError(f"Missing configuration for: {', '.join(missing)}")
+    
+    # ML Models
+    INTENT_MODEL_PATH = os.getenv('INTENT_MODEL_PATH', 'data/models/intent_classifier')
+    SENTIMENT_MODEL_PATH = os.getenv('SENTIMENT_MODEL_PATH', 'data/models/sentiment')
+    
+    # Logging
+    LOG_LEVEL = os.getenv('LOG_LEVEL', 'INFO')
+    LOG_FILE = os.getenv('LOG_FILE', 'logs/sales_agent.log')
