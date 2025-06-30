@@ -1,16 +1,14 @@
 import logging
 import sys
-from logging.handlers import RotatingFileHandler, TimedRotatingFileHandler, WatchedFileHandler
+import os
+from logging.handlers import RotatingFileHandler, TimedRotatingFileHandler
 from datetime import datetime
 import json
-import os
 from typing import Dict, Any
 
 class JSONFormatter(logging.Formatter):
     """Custom formatter that outputs logs in JSON format"""
-    
     def format(self, record: logging.LogRecord) -> str:
-        """Convert log record to JSON string"""
         log_data = {
             "timestamp": datetime.utcnow().isoformat(),
             "level": record.levelname,
@@ -21,11 +19,8 @@ class JSONFormatter(logging.Formatter):
             "process": record.process,
             "thread": record.threadName
         }
-        
-        # Add exception info if present
         if record.exc_info:
             log_data["exception"] = self.formatException(record.exc_info)
-        
         return json.dumps(log_data)
 
 class AppLogger:
@@ -37,29 +32,32 @@ class AppLogger:
     def get_logger(cls, name: str) -> logging.Logger:
         """Get or create a configured logger instance"""
         if name not in cls._loggers:
-            # Create base logger
             logger = logging.getLogger(name)
             logger.setLevel(logging.DEBUG)
             
-            # Create logs directory if it doesn't exist
             os.makedirs("logs", exist_ok=True)
             
-            # 1. Console Handler (for development)
+            # 1. Console Handler
             console_handler = logging.StreamHandler(sys.stdout)
             console_handler.setFormatter(
                 logging.Formatter('%(asctime)s - %(name)s - %(levelname)s - %(message)s')
             )
             logger.addHandler(console_handler)
             
-            # 2. File Handler (rotating by size)
-            os.makedirs('logs', exist_ok=True)
-            file_handler = WatchedFileHandler('logs/app.log', encoding='utf-8')
-            file_handler.setFormatter(logging.Formatter(
-            '%(asctime)s - %(name)s - %(levelname)s - %(message)s')
+            # 2. File Handler (rotating by size, delayed open)
+            file_handler = RotatingFileHandler(
+                'logs/app.log',
+                maxBytes=10_000_000,
+                backupCount=5,
+                encoding='utf-8',
+                delay=True
+            )
+            file_handler.setFormatter(
+                logging.Formatter('%(asctime)s - %(name)s - %(levelname)s - %(message)s')
             )
             logger.addHandler(file_handler)
             
-            # 3. JSON Handler (for structured logging)
+            # 3. JSON Handler (daily rotation)
             json_handler = TimedRotatingFileHandler(
                 filename="logs/structured.json",
                 when='midnight',
