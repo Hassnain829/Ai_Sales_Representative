@@ -1,5 +1,4 @@
-from logging.handlers import RotatingFileHandler
-from flask import Flask, request
+from flask import Flask
 from flask_sqlalchemy import SQLAlchemy
 from .utils.logger import AppLogger
 from dotenv import load_dotenv
@@ -13,7 +12,7 @@ logger = AppLogger.get_logger(__name__)
 
 def create_app(config_class=Config):
     """Application factory function"""
-    app = Flask(__name__, template_folder='templates')  # Changed to lowercase 'templates'
+    app = Flask(__name__, template_folder='templates')
     
     try:
         # Load configuration
@@ -22,15 +21,8 @@ def create_app(config_class=Config):
         # Initialize extensions
         db.init_app(app)
         
-        # Initialize logging
-        handler = RotatingFileHandler(
-            'logs/app.log', 
-            maxBytes=10000, 
-            backupCount=3
-        )
-        logger.addHandler(handler)
+        # No need to add extra handlers — AppLogger has already configured console + file + JSON logging
         
-        # Register components within app context
         with app.app_context():
             # Validate configuration
             missing = [key for key in [
@@ -63,27 +55,18 @@ def _register_error_handlers(app):
     
     @app.errorhandler(400)
     def bad_request(error):
-        logger.warning(f"Bad request: {str(error)}")
-        return {
-            "error": "Bad request",
-            "message": str(error)
-        }, 400
+        logger.warning(f"Bad request: {error}")
+        return {"error": "Bad request", "message": str(error)}, 400
     
     @app.errorhandler(404)
     def not_found(error):
-        logger.warning(f"Not found: {str(error)}")
-        return {
-            "error": "Not found",
-            "message": "The requested resource was not found"
-        }, 404
+        logger.warning(f"Not found: {error}")
+        return {"error": "Not found", "message": "The requested resource was not found"}, 404
     
     @app.errorhandler(500)
     def internal_error(error):
-        logger.error(f"Internal server error: {str(error)}")
-        return {
-            "error": "Internal server error",
-            "message": "An unexpected error occurred"
-        }, 500
+        logger.error(f"Internal server error: {error}")
+        return {"error": "Internal server error", "message": "An unexpected error occurred"}, 500
 
 # Import models after db initialization to avoid circular imports
 from .models import Conversation, TrainingData
