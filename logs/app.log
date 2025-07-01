@@ -1,7 +1,49 @@
-2025-07-01 04:45:09,462 - app - INFO - Database tables initialized
+2025-07-01 04:59:41,037 - app - INFO - Database tables initialized
 Database tables initialized
-2025-07-01 04:45:16,083 - app.utils.db_handler - INFO - Database connection established
-2025-07-01 04:45:16,083 - app.utils.db_handler - INFO - Database connection established
+2025-07-01 04:59:50,679 - app.utils.db_handler - INFO - Database connection established
+2025-07-01 04:59:50,679 - app.utils.db_handler - INFO - Database connection established
 Database connection established
-2025-07-01 04:45:18,678 - app - INFO - Application initialized successfully
+2025-07-01 04:59:52,485 - app - INFO - Application initialized successfully
 Application initialized successfully
+2025-07-01 05:00:08,167 - app.routes - ERROR - Twilio API error: 
+[31m[49mHTTP Error[0m [37m[49mYour request was:[0m
+
+[36m[49mPOST /Accounts/AC3b33ee1708fe8dd88ed7356b4867b515/Calls.json[0m
+
+[37m[49mTwilio returned the following information:[0m
+
+[34m[49mUnable to create record: The number +923122722929 is unverified. Trial accounts may only make calls to verified numbers.[0m
+
+[37m[49mMore information may be available here:[0m
+
+[34m[49mhttps://www.twilio.com/docs/errors/21219[0m
+
+
+2025-07-01 05:00:08,167 - app.routes - ERROR - Twilio API error: 
+[31m[49mHTTP Error[0m [37m[49mYour request was:[0m
+
+[36m[49mPOST /Accounts/AC3b33ee1708fe8dd88ed7356b4867b515/Calls.json[0m
+
+[37m[49mTwilio returned the following information:[0m
+
+[34m[49mUnable to create record: The number +923122722929 is unverified. Trial accounts may only make calls to verified numbers.[0m
+
+[37m[49mMore information may be available here:[0m
+
+[34m[49mhttps://www.twilio.com/docs/errors/21219[0m
+
+
+Twilio API error: 
+[31m[49mHTTP Error[0m [37m[49mYour request was:[0m
+
+[36m[49mPOST /Accounts/AC3b33ee1708fe8dd88ed7356b4867b515/Calls.json[0m
+
+[37m[49mTwilio returned the following information:[0m
+
+[34m[49mUnable to create record: The number +923122722929 is unverified. Trial accounts may only make calls to verified numbers.[0m
+
+[37m[49mMore information may be available here:[0m
+
+[34m[49mhttps://www.twilio.com/docs/errors/21219[0m
+
+
